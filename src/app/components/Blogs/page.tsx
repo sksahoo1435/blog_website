@@ -10,7 +10,6 @@ import blog7 from "@/app/statics/post7.jpg";
 import Image from "next/image";
 import Products from "../Product/page";
 import { useRouter } from "next/navigation";
-import BlogsRoute from '@/app/components/Blogs/[id]/page'
 
 const Blogs = () => {
   const router = useRouter();
@@ -65,8 +64,8 @@ const Blogs = () => {
       </div>
 
 
-      <div className="w-full sm:h-128 md:h-96 p-6">
-        <div className="sm:w-full md:w-3/4 mx-auto">
+      <div className="w-full sm:h-94 md:h-68 p-6">
+        <div className="sm:w-full md:w-4/5 mx-auto">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-600">
               Trending Items are here
@@ -75,8 +74,8 @@ const Blogs = () => {
               You want to know more? Click the item below
             </p>
           </div>
-          <div>
-            <Products datas={arr} />
+          <div className="h-48">
+            <Products items={arr} />
           </div>
         </div>
       </div>
